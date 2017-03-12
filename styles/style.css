@@ -27,6 +27,7 @@
   font-weight: 100;
   font-style: normal;
 }
+
 body{
 	font-family: Museo;
 	font-weight: 100;
@@ -41,7 +42,7 @@ body{
 .ba-product-card {
 	width: 686px;
 	margin: 0 auto;
-	background-color: #111a28;
+	background-color: #162336;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -68,7 +69,7 @@ body{
 }
 
 .ba-boots-fotos__options {
-	margin: 70px 0;
+	margin: 66px 0;
 }
 
 .ba-fotos-marks__item1,
@@ -89,7 +90,7 @@ body{
 .ba-fotos-marks__item3:hover,
 .ba-fotos-marks__item4:hover{
 	
-	border: 3px solid #7e838a;
+	border: 2px solid #7e838a;
 	transition: .3s ease-in;
 }
 
@@ -112,11 +113,10 @@ body{
 .ba-fotos-marks {
 
 	padding: 0;
-/*	margin-left: 143px;*/
 	display: block;
 	width: 84px;
 	height: 16px;
-	margin: 0 auto 20px;
+	margin: 20px 126px ;
 	text-align: center;
 	
 }
@@ -138,7 +138,7 @@ body{
 }
 .star-rating__wrap{
 	display: inline-block;
-	font-size: 12px;
+	font-size: 9px;
 }
 .star-rating__wrap:after{
 	content: "";
@@ -178,6 +178,7 @@ body{
 }
 .ba-title{
 	margin:75px 0 0;
+	line-height: 1;
 	padding: 0;
 	font-weight: 100;
 	text-transform: capitalize;
@@ -196,7 +197,7 @@ body{
 }
 .ba-select {
 	display: block;
-	margin: 28px 0;
+	margin: 29px 0;
 }
 .ba-select__size,
 .ba-select__qtu{
@@ -223,9 +224,11 @@ body{
 	padding-left: 10px;	
 	outline: none;
 	cursor: pointer;
+	transition: color .3s ease-in;
 }
-.ba-select__qtu{
-	margin-left: ;
+.ba-select__qtu:hover,
+.ba-select__size:hover{
+	color: #fff;
 }
 select::-ms-expand {
   display: none;
@@ -236,7 +239,14 @@ select::-ms-expand {
 	font-size: 14px;
 	padding: 11px 58px;
 	border: 1px solid rgba(255, 255, 255, .46);
-	background-color: rgba(32, 40, 53, 0.77);
+	background-color: #2C3645;
 	outline: none;
 	cursor: pointer;
+	transition: .3s ease-in;
+	transition-property: border, background-color;
+}
+
+.ba-add-to-cart:hover {
+	background-color: rgba(255, 255, 255, .46);
+	color: #2C3645;
 }
