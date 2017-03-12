@@ -1,0 +1,242 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ba-clearfix:before,
+.ba-clearfix:after{
+	content: '';
+	display: table;
+}
+.ba-clearfix:after{
+	clear: both;
+}
+.ba-clearfix{
+	clear: both;
+	*zoom: 1;
+}
+@font-face {
+  font-family: 'Museo';
+  src: url('../fonts/museo-sans-light/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), 
+	  url('../fonts/museo-sans-light/MuseoSansCyrl-100.woff') format('woff'), 
+	  url('MuseoSansCyrl-100.ttf')  format('truetype'), 
+	  url('MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+body{
+	font-family: Museo;
+	font-weight: 100;
+	font-size: 18px;
+	color: #e1e1e1;
+	line-height: 1.2857;
+	letter-spacing: 0.02em;
+	background: url(../images/bg.jpg) center center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.ba-product-card {
+	width: 686px;
+	margin: 0 auto;
+	background-color: #111a28;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	box-shadow: 0px 5px 65px 0px rgba(0, 0, 0, 0.82); 
+}
+.ba-product-card__gallery {
+	width: 443px;
+	float: left;	
+}
+
+.ba-logo__conteiner {
+	margin: 22px 20px 0 ;
+}
+
+.ba-logo__image {
+	margin: 22px 20px 0 ;
+}
+
+.ba-boots-fotos {
+	
+	padding-left: 37px;
+}
+
+.ba-boots-fotos__options {
+	margin: 70px 0;
+}
+
+.ba-fotos-marks__item1,
+.ba-fotos-marks__item2,
+.ba-fotos-marks__item3,
+.ba-fotos-marks__item4{
+	float: left;
+	list-style-type: none;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	padding: 0;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.ba-fotos-marks__item1:hover,
+.ba-fotos-marks__item2:hover,
+.ba-fotos-marks__item3:hover,
+.ba-fotos-marks__item4:hover{
+	
+	border: 3px solid #7e838a;
+	transition: .3s ease-in;
+}
+
+.ba-fotos-marks__item1 {
+	background-color: #1f273f;
+}
+
+.ba-fotos-marks__item2 {
+	background-color: #fff;
+}
+
+.ba-fotos-marks__item3 {
+	background-color: #ed3333;
+}
+
+.ba-fotos-marks__item4 {
+	background-color: #29e3ea;
+}
+
+.ba-fotos-marks {
+
+	padding: 0;
+/*	margin-left: 143px;*/
+	display: block;
+	width: 84px;
+	height: 16px;
+	margin: 0 auto 20px;
+	text-align: center;
+	
+}
+
+.ba-fotos-marks__item--active {
+	position: relative;
+	top: -3px;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #7e838a;
+}
+.ba-fotos-marks__item--active:hover{
+	border: 2px solid #7e838a;
+	cursor: auto;
+}
+.star-rating{
+	margin: 25px 0 0;
+	font-size: 0;
+}
+.star-rating__wrap{
+	display: inline-block;
+	font-size: 12px;
+}
+.star-rating__wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+	
+}
+.star-rating__ico{
+	float: right;
+	padding-left: 2px;
+	cursor: pointer;
+	color: #f7bf16;	
+}
+.star-rating__ico:last-child{
+	padding-left: 0;
+}
+.star-rating__input{
+	display: none;
+}
+.star-rating__ico:before,
+.star-rating__ico ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+	content: "\f005";
+	color: #9da1a6;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before{
+	content: "\f005";
+	color: #f7bf16;
+	transition: color .3s ease-in;
+}
+.ba-product-card__buy  {
+	width: 243px;
+	float: right;
+}
+.ba-title{
+	margin:75px 0 0;
+	padding: 0;
+	font-weight: 100;
+	text-transform: capitalize;
+	font-size: 24px;
+	color: #b4b6b8;
+}
+.ba-title--uppercase {
+	text-transform: uppercase;
+}
+.ba-title__description {
+	font-size: 14px;
+	opacity: .46;
+}
+.ba-title__wrap {
+/*	width: 167px;*/
+}
+.ba-select {
+	display: block;
+	margin: 28px 0;
+}
+.ba-select__size,
+.ba-select__qtu{
+ 	width: 68px;
+ 	height: 30px;
+	font-family: Museo;
+	color: rgba(255, 255, 255, .46);
+	font-size: 14px;
+	background-color: transparent;
+ 	border-radius: 0;
+	border: 1px solid rgba(255, 255, 255, .46);
+ 	-webkit-appearance: none;
+ 	background-image: url('../images/select-margin.png');
+ 	background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 1em;
+ 	/* for FF */
+ 	-moz-appearance: none;
+	text-indent: .121px; 
+	text-overflow: '';
+  /* for IE */
+ 	-ms-appearance: none;
+  	appearance: none!important;
+	padding-left: 10px;	
+	outline: none;
+	cursor: pointer;
+}
+.ba-select__qtu{
+	margin-left: ;
+}
+select::-ms-expand {
+  display: none;
+}
+.ba-add-to-cart {
+	font-family: Museo;
+	color: rgba(255, 255, 255, .46);
+	font-size: 14px;
+	padding: 11px 58px;
+	border: 1px solid rgba(255, 255, 255, .46);
+	background-color: rgba(32, 40, 53, 0.77);
+	outline: none;
+	cursor: pointer;
+}
