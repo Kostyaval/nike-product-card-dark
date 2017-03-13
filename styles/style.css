@@ -224,11 +224,13 @@ body{
 	padding-left: 10px;	
 	outline: none;
 	cursor: pointer;
-	transition: color .3s ease-in;
+	transition: .3s ease-in;
+	transition-property: color border;
 }
 .ba-select__qtu:hover,
 .ba-select__size:hover{
 	color: #fff;
+	border: 1px solid #fff;
 }
 select::-ms-expand {
   display: none;
